@@ -7,7 +7,7 @@ model = genai.GenerativeModel('gemini-1.5-pro')
 
 @app.route('/', methods=['GET', 'POST'])
 def main():
-  if request.method === 'GET':
+  if request.method == 'GET':
     return render_template('index.html')
   else:
     prompt = request.form['prompt']
